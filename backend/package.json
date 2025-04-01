@@ -7,8 +7,8 @@
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+  "start": "NODE_ENV=production node app.js",
+  "build": "echo 'Buidling production backend...'"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
