@@ -1,0 +1,122 @@
+/* src/styles/components/TodoItem.css */
+.todo-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+  border-left: 4px solid transparent;
+}
+
+.todo-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.todo-card.completed {
+  opacity: 0.8;
+  border-left-color: #10b981;
+}
+
+.todo-card.in-progress {
+  border-left-color: #f59e0b;
+}
+
+.todo-card.pending {
+  border-left-color: #64748b;
+}
+
+.todo-content {
+  margin-bottom: 1rem;
+}
+
+.todo-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #718096;
+}
+
+.todo-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.todo-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 500;
+}
+
+.status-badge {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-badge.pending {
+  background-color: #64748b;
+}
+
+.status-badge.in-progress {
+  background-color: #f59e0b;
+}
+
+.status-badge.completed {
+  background-color: #10b981;
+}
+
+.todo-deadline {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.todo-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.todo-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  color: #64748b;
+  transition: all 0.2s;
+}
+
+.todo-btn:hover {
+  background: #f1f5f9;
+  color: #2d3748;
+}
+
+.todo-btn.edit {
+  color: #3b82f6;
+}
+
+.todo-btn.delete {
+  color: #ef4444;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  color: #64748b;
+}
