@@ -37,5 +37,5 @@ A complete fullstack Todo application with React frontend and Node.js backend.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/PrabeshPathak2002/todo-app-fullstack.git
-   cd todo-app-fullstack
+   git clone https://github.com/PrabeshPathak2002/ToDo-List.git
+   cd ToDo-List
